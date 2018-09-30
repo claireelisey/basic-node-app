@@ -1,0 +1,27 @@
+#### Questions
+
+> What is a Node module?
+
+A: A Node module is essentially a collection of functions in an application. They can be thought of as JavaScript libraries.
+
+> What is the main difference between `exports` and `module.exports`?
+
+A: `module.exports` is an empty object by default, that is returned when using `require`. `exports` is simply a reference to `module.exports`, but cannot reassign the object `module.exports`.
+
+> Why is using `exports` recommended?
+
+A: `exports` is less limiting in that it does not require you to use a specific object type, whereas `module.exports` does. So unless you have a specific object type in mind, `exports` might be the better way to go.
+
+#### Programming Questions
+
+> Add two more functions, `greetingSpanish` and `greetingIcelandic`, in `greeting.js`.
+
+A: See `greeting.js` file.
+
+> Utilize the two functions in `main.js` just like `greetingEnglish` and `greetingJapanese`.
+
+A: See `main.js` file.
+
+> Create another Node module and import it into `main.js`. Your Node module should have at least two functions within it. Then, call a function from your Node module in `main.js`.
+
+A: See `mascot.js` and `main.js` files.
